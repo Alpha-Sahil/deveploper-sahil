@@ -1,69 +1,87 @@
+.header-font {
+    color: white;
+    font-weight: 600;
+    /* font-size: 15px; */
+}
 
-        .header-font {
-            color: white;
-            font-weight: 600;
-            /* font-size: 15px; */
-        }
+.header {
+    color: white;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
 
-        .header {
-            color: white;
-            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-        }
+.container-fluid {
+    width: 100%;
+}
 
-        .container-fluid {
-            width: 100%;
-        }
+.brand-logo {
+    font-size: 20px;
+    padding: 20px;
+}
 
-        .brand-logo {
-            font-size: 20px;
-            padding: 20px;
-        }
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+}
 
-        .navigation-bar{
-            display: flex;
-            justify-content: center;
-        }
+.navigation-links li {
+    display: inline-flex;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+}
 
-        .navigation-links li {
-            display: inline-flex;
-            padding: 10px 40px 10px 40px;
-            cursor: pointer;
-        }
+.navigation-links li a {
+    text-decoration: none;
+    color: white;
+}
 
-        .navigation-links li a {
-            text-decoration: none;
-            color: white; 
-        }
+.navigation-links li:hover {
+    background-color: #0001;
+    border-radius: 8px;
+}
 
-        .navigation-links li:hover {
-            background-color: #0001;
-            border-radius: 8px;
-        }
+.banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
-        .banner-container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-        }
+.banner-container-left {
+    flex: 1;
+    padding: 10px;
+}
 
-        .banner-container-left {
-            flex: 1;
-            padding: 10px;
-        }
+.banner-container-right {
+    flex: 1;
+    /* padding: 30px 50px 30px 50px; */
+}
 
-        .banner-container-right {
-            flex: 1;
-            /* padding: 30px 50px 30px 50px; */
-        }
+.banner-image img {
+    width: 100%;
+    height: auto;
+}
 
-        .banner-image img {
-            width: 100%;
-            height: auto;
-        }
+.banner-text {
+    font-size: 25px;
+    padding: 70px;
+}
 
-        .banner-text {
-            font-size: 25px;
-            padding: 70px;
-        }
+.banner-button {
+    margin: 10px 0px 0px 0px;
+}
 
-        
+.banner-button button {
+    border: none;
+    background-color: #404eed;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Righteous";
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.banner-button button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

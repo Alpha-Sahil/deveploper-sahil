@@ -1,0 +1,49 @@
+.about-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.about-heading h1 {
+    color: white;
+    padding: 10px 20px 10px 20px;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    border-radius: 8px;
+}
+
+.about-card {
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.card {
+    width: 300px;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+}
+
+.card-description {
+    padding: 10px;
+    color: white;
+}
+
+.card-image {
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 40px;
+}
+
+.banner-container > .banner-container-left, .banner-container-right {
+    flex: 400px;
+}
