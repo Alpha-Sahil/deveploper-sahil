@@ -9,17 +9,15 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/option.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/instagram.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>developer sahil</title>
     <style>
         body {
             margin:0;
             padding:0;
             font-family: "Righteous";
-        }
-
-        .footer-container {
-            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-            height: 500px;
         }
     </style>
 </head>
@@ -60,7 +58,7 @@
                 </div>
                 <div class="banner-container-right">
                     <div class="banner-text">
-                        <h1 style="font-family: Righteous;">
+                        <h1 style="font-family: Righteous; color: #f9f047;">
                             I' M Sahil <br>
                             Software Engineer
                         </h3>
@@ -69,11 +67,11 @@
                         </small>
 
                         <div class="banner-button">
-                            <button>
+                            <button class="vampire-button">
                                 Join my Discord server
                             </button>
-                            <button style="background-color: #f00;">
-                                Youtube channel
+                            <button class="vampire-button" style="background-color: #cd00c0;">
+                                Follow on instagram
                             </button>
                         </div>
                     </div>
@@ -123,22 +121,45 @@
         </div>
     </section>
 
-    <div class="breaker">
+    <section class="music-section">
+        <!-- <div class="music-introduction"> -->
+            <div class="music-container">
+                <div class="music music-intro">
+                    I'm <span style="font-size: 30px; font-weight: 600; color: #f9f047;">vampy beats,</span> a passionate music producer on a perpetual quest to create immersive sonic experiences. 
+                    With a love for blending genres and a keen ear for detail, I specialize in sculpting melodies and rhythms that not only
+                    captivate but resonate on a deeper level. From crafting infectious beats to orchestrating cinematic soundscapes, my goal
+                    is to elevate every project to its fullest potential. Let's collaborate and turn your musical vision into a reality.
+                    Welcome to a world where creativity knows no bounds!" 🎧✨
+                </div>
+                <div class="music instagram-link">
+                    <div class="insta-button">
+                        <button class="vampire-button" style="background-color: #f00;">
+                            Youtube channel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+
+    <!-- <div class="breaker">
         <div class="breaker-container">
 
         </div>
-    </div>
+    </div> -->
 
     <section>
         <div class="about-section">
-            <div class="about-heading">
-                <h1>
-                    About
-                </h1>
-            </div>
-
             <div class="about-card">
                 <div class="card-container">
+                    <!-- <div class="previous-card-button">
+                        &lHar;
+                    </div>
+
+                    <div class="next-card-button">
+                        &rHar;
+                    </div> -->
+
                     <div class="card">
                         <div class="card-image">
                             <img src="images/vue.jpg"
@@ -201,6 +222,42 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/ejs.png"
+                            alt="" style="width:100%;">
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                EJS or Embedded Javascript Templating is a templating engine used by Node.js. Template engine helps to create an HTML template with minimal code. Also, it can inject data into an HTML template on the client side and produce the final HTML.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/sql.jpg"
+                            alt="" style="width:100%;">
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                Structured query language (SQL) is a programming language for storing and processing information in a relational database. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/js.png"
+                            alt="" style="width:100%;">
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                JavaScript is an open-source programming language. It is designed for creating web-centric applications. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,14 +265,51 @@
 
     <section>
         <div class="footer-container">
-            <footer class="footer_section">
-                <div class="container">
-                    <p>
-                        &copy; <span id="displayYear"></span> All Rights Reserved By
-                        <a href="https://html.design/">Free Html Templates</a>
-                    </p>
+            <div class="footer-first">
+                <footer class="footer_section">
+                    <div class="container">
+                        <p>
+                            &copy; <span id="displayYear"></span>Vampire
+                        </p>
+                    </div>
+                </footer>
+            </div>
+            <div class="footer-middle">
+                <div class="second-footer-content">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
-            </footer>
+                <div class="social-container">
+                    <div class="social facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="social discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                    <div class="social instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="social twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="social youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-last">
+                <footer class="footer_section">
+                    <div class="container">
+                        <p>
+                            &copy; <span id="displayYear"></span> All Rights Reserved
+                        </p>
+                    </div>
+                </footer>
+            </div>
         </div>
     </section>
 </body>

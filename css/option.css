@@ -11,7 +11,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-image 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .option-gif img {
@@ -26,7 +26,7 @@
 .option-title {
     text-align:center;
     padding: 10px;
-    transition: all 0.5s ease;
+    transition: all 700ms ease;
 }
 
 .breaker-container {

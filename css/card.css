@@ -1,3 +1,7 @@
+.about-section {
+    margin-top:50px;
+}
+
 .about-heading {
     display: flex;
     justify-content: center;
@@ -19,6 +23,21 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 3em;
+    position: relative;
+}
+
+.previous-card-button {
+    position: absolute;
+    left: 3%;
+    transform:translate(-50%,-50%);
+    top: 50%;
+}
+
+.next-card-button {
+    position: absolute;
+    right: 2%;
+    transform:translate(-50%,-50%);
+    top: 50%;
 }
 
 .card {
@@ -26,6 +45,7 @@
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
+    transition: all 200ms ease-in-out;
 }
 
 .card-description {
