@@ -84,7 +84,7 @@
     </div>
 
     <section class="option-section" id="about">
-        <div class="option-container">
+        <div class="option-container" onclick="hideShowSections('education')">
             <div class="option">
                 <div class="single-option">
                     <div class="option-gif">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="option" id="skill-option">
+            <div class="option" id="skill-option" onclick="hideShowSections('skill-section')">
                 <div class="single-option">
                     <div class="option-gif">
                         <img src="images/influence.gif">
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="option" id="hobbies-section">
+            <div class="option" id="hobbies-section" onclick="hideShowSections('music-section')">
                 <div class="option-skills">
                     <div class="option-gif">
                         <img src="images/spanish.gif">
@@ -321,29 +321,14 @@
     </section>
 </body>
 <script>
-    let Skills = document.getElementById('skill-option')
+    function hideShowSections (section) {
+        let sectionElement = document.getElementById(section)
 
-    Skills.addEventListener('click', () => {
-        let skillSection = document.getElementById('skill-section')
-        
-        skillSection.style.display = 'block'
+        sectionElement.style.display = 'block'
 
-        setTimeout(() => {
-            skillSection.scrollIntoView()
-        }, 100)
-    })
+        if (section === 'music-section') document.getElementById(section).style.marginBottom = '50px'
 
-    let hobbies = document.getElementById('hobbies-section')
-
-    hobbies.addEventListener('click', () => {
-        let skillSection = document.getElementById('music-section')
-        
-        skillSection.style.display = 'block'
-        skillSection.style.marginBottom = '50px'
-    
-        setTimeout(() => {
-            skillSection.scrollIntoView()
-        }, 100)
-    })
+        setTimeout(() => sectionElement.scrollIntoView(), 200)
+    }
 </script>
 </html>

@@ -5,6 +5,7 @@
             width: 100%;
             flex-wrap: wrap;
             color: #fff;
+            transition: all 5000ms ease-in-out;
         }
 
         .music-intro {
@@ -28,4 +29,5 @@
 
         .music-section {
             background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+            transition: all 5000ms ease-in-out;
         }
