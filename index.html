@@ -19,22 +19,25 @@
             padding:0;
             font-family: "Righteous";
         }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="home">
         <header>
             <div class="container-fluid">
                 <nav class="navigation-bar">
                     <div class="navigation-links">
                         <ul type="none" class="">
                             <li>
-                                <a href="#">
+                                <a href="#home">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#about">
                                     About
                                 </a>
                             </li>
@@ -80,8 +83,8 @@
         </section>
     </div>
 
-    <section class="option-section">
-        <div class="option-container">
+    <section class="option-section" id="about">
+        <div class="option-container" onclick="hideShowSections('education')">
             <div class="option">
                 <div class="single-option">
                     <div class="option-gif">
@@ -94,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="option">
+            <div class="option" id="skill-option" onclick="hideShowSections('skill-section')">
                 <div class="single-option">
                     <div class="option-gif">
                         <img src="images/influence.gif">
@@ -106,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="option">
+            <div class="option" id="hobbies-section" onclick="hideShowSections('music-section')">
                 <div class="option-skills">
                     <div class="option-gif">
                         <img src="images/spanish.gif">
@@ -121,7 +124,9 @@
         </div>
     </section>
 
-    <section class="music-section">
+    <section class="music-section"
+        id="music-section"
+        style="display: none;" >
         <!-- <div class="music-introduction"> -->
             <div class="music-container">
                 <div class="music music-intro">
@@ -149,7 +154,9 @@
     </div> -->
 
     <section>
-        <div class="about-section">
+        <div class="about-section"
+            id="skill-section" 
+            style="display: none;" >
             <div class="about-card">
                 <div class="card-container">
                     <!-- <div class="previous-card-button">
@@ -165,13 +172,13 @@
                             <img src="images/vue.jpg"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 Vue is a JavaScript framework for building user interfaces. 
                                 It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based 
                                 programming model that helps you efficiently develop user interfaces, be they simple or complex.
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card">
@@ -179,12 +186,12 @@
                             <img src="images/laravel.png"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — 
                                 freeing you to create without sweating the small things.
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card">
@@ -192,11 +199,11 @@
                             <img src="images/express.png"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card">
@@ -204,11 +211,11 @@
                             <img src="images/react.png"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript.
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card">
@@ -216,11 +223,11 @@
                             <img src="images/node.png"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card">
@@ -228,11 +235,11 @@
                             <img src="images/ejs.png"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 EJS or Embedded Javascript Templating is a templating engine used by Node.js. Template engine helps to create an HTML template with minimal code. Also, it can inject data into an HTML template on the client side and produce the final HTML.
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card">
@@ -240,11 +247,11 @@
                             <img src="images/sql.jpg"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 Structured query language (SQL) is a programming language for storing and processing information in a relational database. 
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="card">
@@ -252,11 +259,11 @@
                             <img src="images/js.png"
                             alt="" style="width:100%;">
                         </div>
-                        <div class="card-description">
+                        <!-- <div class="card-description">
                             <p>
                                 JavaScript is an open-source programming language. It is designed for creating web-centric applications. 
                             </p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -313,4 +320,15 @@
         </div>
     </section>
 </body>
+<script>
+    function hideShowSections (section) {
+        let sectionElement = document.getElementById(section)
+
+        sectionElement.style.display = 'block'
+
+        if (section === 'music-section') document.getElementById(section).style.marginBottom = '50px'
+
+        setTimeout(() => sectionElement.scrollIntoView(), 200)
+    }
+</script>
 </html>
